@@ -29,13 +29,35 @@ function WormholeAmbient() {
 export default function ContactPage() {
   const [formState, setFormState] = useState<'idle' | 'submitting' | 'success'>('idle');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setFormState('submitting');
-    // Simulate network request
-    setTimeout(() => {
-      setFormState('success');
-    }, 1500);
+    
+    try {
+      const formData = new FormData(e.currentTarget);
+      const data = {
+        name: formData.get('name'),
+        email: formData.get('email'),
+        subject: formData.get('subject'),
+        message: formData.get('message'),
+      };
+
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        setFormState('success');
+      } else {
+        setFormState('idle');
+        alert('Failed to send message. Please try again or email directly.');
+      }
+    } catch (error) {
+      setFormState('idle');
+      alert('An error occurred while sending the message.');
+    }
   };
 
   const copyEmail = () => {
@@ -69,6 +91,7 @@ export default function ContactPage() {
               <label htmlFor="name" style={{ fontFamily: 'var(--font-body)', fontWeight: 500, fontSize: '0.8rem', color: 'var(--comet)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Name</label>
               <input 
                 id="name"
+                name="name"
                 required
                 type="text" 
                 className="w-full px-4 py-3 rounded-md transition-all outline-none focus:border-[var(--dust)] focus:shadow-[0_0_0_3px_rgba(196,145,58,0.2)]"
@@ -79,6 +102,7 @@ export default function ContactPage() {
               <label htmlFor="email" style={{ fontFamily: 'var(--font-body)', fontWeight: 500, fontSize: '0.8rem', color: 'var(--comet)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Email</label>
               <input 
                 id="email"
+                name="email"
                 required
                 type="email" 
                 className="w-full px-4 py-3 rounded-md transition-all outline-none focus:border-[var(--dust)] focus:shadow-[0_0_0_3px_rgba(196,145,58,0.2)]"
@@ -91,6 +115,7 @@ export default function ContactPage() {
             <label htmlFor="subject" style={{ fontFamily: 'var(--font-body)', fontWeight: 500, fontSize: '0.8rem', color: 'var(--comet)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Subject</label>
             <select 
               id="subject"
+              name="subject"
               className="w-full px-4 py-3 rounded-md transition-all outline-none focus:border-[var(--dust)] focus:shadow-[0_0_0_3px_rgba(196,145,58,0.2)] appearance-none"
               style={{ background: 'var(--deep-space)', border: '1px solid var(--horizon)', color: 'var(--star)' }}
             >
@@ -105,6 +130,7 @@ export default function ContactPage() {
             <label htmlFor="message" style={{ fontFamily: 'var(--font-body)', fontWeight: 500, fontSize: '0.8rem', color: 'var(--comet)', textTransform: 'uppercase', letterSpacing: '0.08em' }}>Message</label>
             <textarea 
               id="message"
+              name="message"
               required
               rows={5}
               className="w-full px-4 py-3 rounded-md transition-all outline-none focus:border-[var(--dust)] focus:shadow-[0_0_0_3px_rgba(196,145,58,0.2)] resize-y min-h-[140px] max-h-[400px]"
