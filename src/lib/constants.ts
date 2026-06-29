@@ -1,154 +1,118 @@
 // ============================================================
 // BHAVYA SAINI PORTFOLIO — CONTENT CONSTANTS
-// Search for "TODO:" to find all placeholders to fill in.
 // ============================================================
 
 export const PERSONAL = {
   name: "Bhavya Saini",
   firstName: "Bhavya",
   lastName: "Saini",
-  role: "Backend Developer & AI Systems Engineer",
-  tagline: "I architect backends. I teach them to think.",
+  role: "CS Student • AI Systems Builder • QA/SDET Aspirant",
+  tagline: "I build AI systems. I make sure they actually work.",
   description:
-    "Building intelligent systems where Java meets AI — REST APIs, LLM pipelines, RAG architectures, and multi-agent systems. Open to backend & AI engineering internships.",
+    "Fourth-year CS student with hands-on experience building AI-powered systems and validating their behaviour under real-world conditions. Strong foundation in software testing, defect analysis, and evaluating non-deterministic AI outputs for accuracy and reliability.",
 
-  // TODO: Fill in your university details
-  university: "TODO: Your University Name",
-  degree: "TODO: B.Tech Computer Science",
-  graduationYear: "TODO: May 2026",
+  university: "New Horizon College Of Engineering",
+  degree: "B.E. Computer Science Engineering",
+  graduationYear: "2027",
 
-  // TODO: Fill in your contact details
-  email: "TODO: your@email.com",
-  githubUsername: "TODO: your-github-username",
-  githubUrl: "https://github.com/TODO-your-github-username",
-  linkedinUrl: "https://linkedin.com/in/TODO-your-linkedin",
-  leetcodeUrl: "https://leetcode.com/TODO-your-leetcode",
-  hackerrankUrl: "https://hackerrank.com/TODO-your-hackerrank",
+  email: "bhavyasaini06@gmail.com",
+  githubUsername: "BhavyaWritesCode",
+  githubUrl: "https://github.com/BhavyaWritesCode",
+  linkedinUrl: "https://linkedin.com/in/bhavya-saini-568a29303",
+  leetcodeUrl: "https://leetcode.com/u/bhavyasaini06",
+  hackerrankUrl: "https://hackerrank.com/bhavyasaini06",
 
-  // TODO: Fill in your availability
-  availableFrom: "TODO: June 2025",
-  lookingFor: "Backend Intern / AI Engineering Intern",
-  location: "India",
+  availableFrom: "Immediately",
+  lookingFor: "QA / SDET Intern",
+  location: "Bangalore, India",
   openToRemote: true,
 };
 
 export const STATS = {
-  // TODO: Fill in your real numbers
-  projects: 6,
-  leetcodeProblems: 250, // TODO: your real count
-  githubCommits: 500,    // TODO: your real count (approx)
-  openSourcePRs: 5,      // TODO: your real count
-  githubRepos: 15,       // TODO: your real count
-  hackerrankStars: 5,    // TODO
+  projects: 4,
+  leetcodeProblems: 200,
+  githubCommits: 400,
+  openSourcePRs: 2,
+  githubRepos: 10,
+  hackerrankStars: 4,
 };
 
 export const PROJECTS = [
   {
     id: "project-1",
-    name: "TODO: Project Name 1",
-    tagline: "TODO: One powerful sentence describing what this does.",
+    name: "AI-Powered Java Code Review System",
+    tagline: "A 3-stage AST analysis engine with parallel AI pipelines that scores Java code 0–100 for bugs, security, and quality.",
     description:
-      "TODO: First sentence about the problem you solved. Second sentence about the technical approach. Third sentence about key features or AI integration. Fourth sentence about impact or scale.",
-    tech: ["Java", "Spring Boot", "LangChain4j", "ChromaDB", "Docker"],
+      "Designed and validated a 3-stage JavaParser AST analysis engine, defining test cases across cyclomatic complexity, naming violations, and structural metrics to verify detection accuracy per file. Built an evaluation framework for 3 parallel AI pipelines — Bug Detection, Security Scanning, and Code Quality Scoring — via LangChain4j and OpenAI API, testing for output consistency, false positives, and hallucinated issues across repeated runs and consolidating results into a 0–100 review score. Developed a Refactoring Suggestion Engine that validates generated fixes for correctness, regression risk, and explanation clarity, reducing repeat-error submissions in developer self-testing.",
+    tech: ["Java", "LangChain4j", "JavaParser", "ChromaDB", "MySQL", "OpenAI API"],
     category: "AI / LLM" as const,
-    github: "https://github.com/TODO-your-username/TODO-project-1",
+    github: "https://github.com/BhavyaWritesCode",
     live: "N/A",
     featured: true,
-    achievement: "TODO: Key stat — e.g. 85% retrieval accuracy on 10k doc corpus",
-    built: "TODO: Jan 2025",
+    achievement: "3 parallel AI pipelines · 0–100 review score",
+    built: "2025",
     miniSceneColor: "#F5A623",
   },
   {
     id: "project-2",
-    name: "TODO: Project Name 2",
-    tagline: "TODO: One powerful sentence.",
+    name: "Java MCP Server — AI Tool Integration Platform",
+    tagline: "A production-compatible MCP server exposing 4 agentic tools so Claude and ChatGPT can interact with live external data.",
     description:
-      "TODO: Full description in 3–4 sentences.",
-    tech: ["Java", "Spring Boot", "MySQL", "REST APIs"],
+      "Built a production-compatible Model Context Protocol (MCP) server in Java exposing 4 agentic tools — GitHub Repo Analyzer, Safe SQL Executor, Semantic Doc Searcher, and a Dockerized Code Sandbox — enabling any MCP-compatible AI client (Claude, ChatGPT) to interact with live external data sources. Engineered a SQL validation guardrail that parses and blocks all destructive queries (DROP, DELETE, UPDATE) before execution, and a Docker-isolated Java sandbox with configurable timeout and memory limits for safe AI-driven code execution. Logged every tool invocation with input, output, latency, and session metadata to MySQL, providing full observability and usage analytics across all AI client sessions.",
+    tech: ["Java", "MCP SDK", "Docker", "ChromaDB", "MySQL", "GitHub API"],
     category: "Backend" as const,
-    github: "https://github.com/TODO-your-username/TODO-project-2",
+    github: "https://github.com/BhavyaWritesCode",
     live: "N/A",
     featured: false,
-    achievement: "TODO: Key achievement or stat",
-    built: "TODO: Nov 2024",
+    achievement: "4 agentic tools · Full SQL guardrails · Docker sandbox",
+    built: "2025",
     miniSceneColor: "#9D00FF",
   },
   {
     id: "project-3",
-    name: "TODO: Project Name 3",
-    tagline: "TODO: One powerful sentence.",
+    name: "SmartScribe Analytics Engine",
+    tagline: "An AI-powered content intelligence platform that automates the full content lifecycle using Groq Llama 3.1 70B.",
     description:
-      "TODO: Full description in 3–4 sentences.",
-    tech: ["Python", "OpenAI API", "Docker", "GCP"],
+      "Built an AI-powered content intelligence platform that automates the full content lifecycle — analysis, improvement, structuring, and publishing — using Python, Groq's Llama 3.1 70B, and Streamlit. Implemented a DITA XML generator that converts unstructured text into industry-standard topic types (task, concept, reference), directly mirroring enterprise documentation systems used at companies like Infineon. Built a content analytics engine using Textstat to measure readability, sentence complexity, passive voice, and structural clarity.",
+    tech: ["Python", "Groq Llama 3.1", "Streamlit", "REST APIs", "Textstat", "DITA XML"],
     category: "AI / LLM" as const,
-    github: "https://github.com/TODO-your-username/TODO-project-3",
+    github: "https://github.com/BhavyaWritesCode",
     live: "N/A",
     featured: false,
-    achievement: "TODO: Key achievement",
-    built: "TODO: Sep 2024",
+    achievement: "DITA XML generation · Readability analytics engine",
+    built: "2024",
     miniSceneColor: "#FF2D78",
   },
   {
     id: "project-4",
-    name: "TODO: Project Name 4",
-    tagline: "TODO: One powerful sentence.",
+    name: "Caravan App Project",
+    tagline: "A vehicle dispatch system with a custom sorting algorithm to optimize utilization across animal type, car size, and capacity.",
     description:
-      "TODO: Full description in 3–4 sentences.",
-    tech: ["Java", "JavaParser", "AST", "Maven"],
+      "Designed and implemented a custom sorting algorithm based on comparative analysis, utilizing data structures such as arrays, linked lists, and trees to optimize vehicle utilization and incorporate factors such as car size, animal type, and passenger capacity. Developed a vehicle dispatch system using Java, utilizing object-oriented programming principles and advanced data structures such as heaps and queues to efficiently route vehicles. The project demonstrates strong foundational command of DSA and OOP design patterns through a real-world logistics simulation.",
+    tech: ["Java", "DSA", "OOP", "Heaps", "Queues", "Linked Lists"],
     category: "Tool" as const,
-    github: "https://github.com/TODO-your-username/TODO-project-4",
+    github: "https://github.com/BhavyaWritesCode",
     live: "N/A",
     featured: false,
-    achievement: "TODO: Key achievement",
-    built: "TODO: Jul 2024",
-    miniSceneColor: "#F5A623",
-  },
-  {
-    id: "project-5",
-    name: "TODO: Project Name 5",
-    tagline: "TODO: One powerful sentence.",
-    description:
-      "TODO: Full description in 3–4 sentences.",
-    tech: ["Spring Boot", "PostgreSQL", "Docker", "AWS"],
-    category: "Backend" as const,
-    github: "https://github.com/TODO-your-username/TODO-project-5",
-    live: "N/A",
-    featured: false,
-    achievement: "TODO: Key achievement",
-    built: "TODO: May 2024",
-    miniSceneColor: "#9D00FF",
-  },
-  {
-    id: "project-6",
-    name: "TODO: Project Name 6",
-    tagline: "TODO: One powerful sentence.",
-    description:
-      "TODO: Full description in 3–4 sentences.",
-    tech: ["Java", "HttpClient", "REST APIs", "JSON"],
-    category: "API" as const,
-    github: "https://github.com/TODO-your-username/TODO-project-6",
-    live: "N/A",
-    featured: false,
-    achievement: "TODO: Key achievement",
-    built: "TODO: Mar 2024",
-    miniSceneColor: "#FF2D78",
+    achievement: "Custom sorting algorithm · Heap-based dispatch routing",
+    built: "2024",
+    miniSceneColor: "#22D3EE",
   },
 ];
 
-export const PROJECT_CATEGORIES = ["All", "AI / LLM", "Backend", "Tool", "API"] as const;
+export const PROJECT_CATEGORIES = ["All", "AI / LLM", "Backend", "Tool"] as const;
 
 export const SKILLS = {
-  "Core Languages": ["Java", "C", "C++", "Python", "JavaScript", "HTML/CSS"],
-  "Backend & Frameworks": [
-    "Spring Boot",
-    "Maven",
-    "REST APIs",
-    "Java HttpClient",
+  "Languages": ["Java", "C", "C++", "Python", "JavaScript", "HTML/CSS"],
+  "Frameworks & Tools": [
     "JavaParser (AST)",
+    "Maven",
     "Docker",
-    "Kubernetes",
+    "REST APIs (Java HttpClient)",
+    "Git",
+    "GitHub",
   ],
-  "AI & LLM Engineering": [
+  "AI & LLM": [
     "LangChain4j",
     "OpenAI API",
     "Prompt Engineering",
@@ -158,46 +122,44 @@ export const SKILLS = {
     "Multi-Pipeline AI Systems",
   ],
   "Cloud & Databases": [
-    "Google Cloud Platform",
+    "Google Cloud",
     "Vertex AI",
-    "AWS",
     "MySQL",
-    "PostgreSQL",
     "ChromaDB",
   ],
-  "Tools & Workflow": ["Git", "GitHub", "Docker", "Maven", "IntelliJ IDEA", "VS Code"],
-  Concepts: ["DSA", "OOP", "System Design", "Multi-Agent Systems", "AST Parsing"],
+  "Concepts": ["Data Structures & Algorithms", "OOP", "Multi-Pipeline AI Systems", "AST Parsing"],
+  "Soft Skills": ["Teamwork", "Problem Solving", "Self-Learning", "Adaptability"],
 };
 
-export const SKILLS_FLAT = Object.values(SKILLS).flat();
+export const SKILLS_FLAT = Array.from(new Set(Object.values(SKILLS).flat()));
 
 export const MARQUEE_SKILLS = [
   "Java",
-  "Spring Boot",
   "LangChain4j",
   "Docker",
-  "GCP",
+  "Google Cloud",
   "ChromaDB",
   "RAG Pipelines",
   "OpenAI API",
   "REST APIs",
   "Vertex AI",
-  "Multi-Agent AI",
-  "PostgreSQL",
-  "Kubernetes",
-  "AST Parsing",
-  "LLM Integration",
-  "System Design",
+  "MCP",
+  "JavaParser AST",
+  "MySQL",
+  "Prompt Engineering",
+  "Vector Embeddings",
+  "AI Pipelines",
+  "DSA",
 ];
 
 export const INTERESTS = [
-  "System Design",
-  "Distributed Systems",
+  "AI Systems",
+  "Software Quality & Testing",
   "LLM Applications",
   "DSA",
   "Open Source",
-  "Compiler Design",
   "Cloud Architecture",
+  "Agentic AI",
 ];
 
 export const CURRENTLY = [
@@ -206,12 +168,12 @@ export const CURRENTLY = [
     text: `Studying ${PERSONAL.degree} at ${PERSONAL.university} (Expected ${PERSONAL.graduationYear})`,
   },
   {
-    icon: "⚙️",
-    text: "Building AI-powered backend systems with LangChain4j and multi-agent architectures",
+    icon: "🤖",
+    text: "Building and validating AI-powered systems — LangChain4j, MCP servers, RAG pipelines",
   },
   {
-    icon: "💡",
-    text: "Solving DSA daily + contributing to open source projects",
+    icon: "🔍",
+    text: "Seeking a QA/SDET internship to help ship trustworthy AI-driven products",
   },
 ];
 
@@ -273,15 +235,16 @@ export const OWN_OPEN_SOURCE = [
 export const CHATBOT_SYSTEM_PROMPT = `You are a helpful assistant on Bhavya Saini's portfolio website. Answer questions about Bhavya confidently and concisely.
 
 About Bhavya:
-- Backend developer & AI systems engineer, CS student from India
-- University: ${PERSONAL.university}, ${PERSONAL.degree}, graduating ${PERSONAL.graduationYear}
-- Core stack: Java, Spring Boot, LangChain4j, Docker, GCP, ChromaDB, MySQL
-- Specialties: RAG pipelines, multi-agent AI systems, REST APIs, LLM integration, MCP protocols
-- Active on LeetCode (${STATS.leetcodeProblems}+ problems solved) and HackerRank
-- Open source contributor on GitHub (@${PERSONAL.githubUsername})
-- Seeking: Backend Intern or AI Engineering Intern
-- Available: ${PERSONAL.availableFrom}
-- Location: ${PERSONAL.location} (open to remote or on-site globally)
+- Fourth-year CS student (B.E. CSE) (GPA: 8.4/10, graduating 2027)
+- Hands-on experience building AI-powered systems and validating their behaviour under real-world conditions
+- Core stack: Java, C/C++, Python, JavaScript, LangChain4j, OpenAI API, JavaParser AST, Maven, Docker, Google Cloud, Vertex AI, MySQL, ChromaDB, MCP
+- Specialties: AI pipeline testing, defect analysis, evaluating non-deterministic LLM outputs, RAG pipelines, MCP server development
+- Active on LeetCode (${STATS.leetcodeProblems}+ problems) — profile: leetcode.com/u/bhavyasaini06
+- GitHub: github.com/BhavyaWritesCode
+- Certifications: SAP Generative AI Developer (SAP), Google Arcade Legend (Google Cloud), LangChain for LLM App Development (DeepLearning.ai)
+- Extracurriculars: Student Ambassador at CDC NHCE (2025–present), Board Member at Tech Forge Club NHCE (2024)
+- Seeking: QA / SDET Internship — to help ship trustworthy AI-driven products
+- Available: Immediately | Location: Bangalore, India (open to remote)
 
 Projects:
 ${PROJECTS.map(p => `- ${p.name}: ${p.tagline}`).join('\n')}
@@ -289,6 +252,7 @@ ${PROJECTS.map(p => `- ${p.name}: ${p.tagline}`).join('\n')}
 Links:
 - GitHub: ${PERSONAL.githubUrl}
 - LinkedIn: ${PERSONAL.linkedinUrl}
+- LeetCode: ${PERSONAL.leetcodeUrl}
 - Email: ${PERSONAL.email}
 
 Answer in 2–4 sentences. Be specific and impressive. Focus on technical depth and genuine capability.
@@ -297,10 +261,10 @@ If asked something not listed here, say so briefly and redirect to the resume or
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/skills", label: "Skills" },
   { href: "/projects", label: "Projects" },
-  { href: "/open-source", label: "Open Source" },
-  { href: "/resume", label: "Resume" },
+  { href: "/skills", label: "Skills" },
+  { href: "/contact", label: "Contact" },
+  { href: "/resume", label: "CV" },
 ];
 
 export const SOCIAL_LINKS = [

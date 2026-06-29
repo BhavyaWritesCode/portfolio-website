@@ -1,24 +1,17 @@
-import { Bebas_Neue, Syne, Outfit, JetBrains_Mono } from "next/font/google";
+import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 
-export const bebasNeue = Bebas_Neue({
-  weight: "400",
+export const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
-  variable: "--font-bebas",
+  variable: "--font-space",
   display: "swap",
+  weight: ["400", "500", "600", "700"],
 });
 
-export const syne = Syne({
+export const inter = Inter({
   subsets: ["latin"],
-  variable: "--font-syne",
+  variable: "--font-inter",
   display: "swap",
-  weight: ["400", "500", "600", "700", "800"],
-});
-
-export const outfit = Outfit({
-  subsets: ["latin"],
-  variable: "--font-outfit",
-  display: "swap",
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500", "600"],
 });
 
 export const jetbrainsMono = JetBrains_Mono({
