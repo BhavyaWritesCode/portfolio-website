@@ -37,8 +37,7 @@ This portfolio goes beyond a traditional static site. It incorporates immersive 
 I am currently open to internships and new collaborative opportunities. 
 
 - **GitHub:** [@BhavyaWritesCode](https://github.com/BhavyaWritesCode)
-- **LinkedIn:** [Reach out on LinkedIn](#) *(Add your URL here)*
-- **Email:** [Send me an email](#) *(Add your email here)*
+- **LinkedIn:** [Bhavya Saini](https://www.linkedin.com/in/bhavya-saini-568a29303/)
 
 ---
 *Built from scratch with curiosity and code.*
