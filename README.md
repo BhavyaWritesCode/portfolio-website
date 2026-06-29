@@ -1,36 +1,44 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bhavya | Backend & AI Systems Engineer
 
-## Getting Started
+Welcome to my personal portfolio repository! This space serves as an interactive showcase of my work, engineering philosophy, and the technologies I use to build scalable systems.
 
-First, run the development server:
+## Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+I am a fourth-year Computer Science student at NHCE Bangalore, specializing in backend architecture, AI pipeline design, and LLM engineering. This portfolio was designed to reflect my passion for building systems that are not just functional, but reliable and trustworthy.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*(Don't forget to add your live website URL here once deployed!)*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Design & Architecture
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+This portfolio goes beyond a traditional static site. It incorporates immersive web experiences using WebGL and advanced animation libraries to create a terminal-inspired, cinematic feel.
 
-## Learn More
+### Core Stack
+- **Framework:** [Next.js](https://nextjs.org/) & React
+- **3D Graphics & WebGL:** [Three.js](https://threejs.org/) & React Three Fiber
+- **Animations:** [GSAP](https://gsap.com/) (GreenSock Animation Platform)
+- **Styling:** Custom CSS Design Tokens (Deep space aesthetic)
+- **Interactive Data Visualization:** React Force Graph 3D
 
-To learn more about Next.js, take a look at the following resources:
+### Key Features
+- **Cinematic 3D Hero Sections:** Interactive celestial physics simulations and distant planets.
+- **GSAP Scroll Animations:** Fluid entrance and scroll-triggered animations across all pages.
+- **Terminal Aesthetic:** "Off-Duty" Bento box layouts, code-styled typography, and command-line aesthetics.
+- **Custom Sound Engine:** Atmospheric audio design layered into the experience.
+- **Easter Eggs & Secrets:** Hidden interactions for the curious developer.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Engineering Philosophy
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Systems Thinking:** Every line of code exists within an architecture.
+- **Reliability First:** 99.9% is a promise. I build the 0.1% buffer.
+- **Curiosity as Method:** I treat engineering problems the way physicists treat the universe.
 
-## Deploy on Vercel
+## Connect With Me
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+I am currently open to internships and new collaborative opportunities. 
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **GitHub:** [@BhavyaWritesCode](https://github.com/BhavyaWritesCode)
+- **LinkedIn:** [Reach out on LinkedIn](#) *(Add your URL here)*
+- **Email:** [Send me an email](#) *(Add your email here)*
+
+---
+*Built from scratch with curiosity and code.*
